@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 4525105697722998188}
   - component: {fileID: 4525105697722998187}
   - component: {fileID: 4525105697722998184}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -194,11 +194,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   recentlyLaunchedItem: 0
+  recentlyShot: 0
   itemLaunchCooldown: 1
   itemLaunchVelocity: 20
   grenadeCooldown: 2
+  gunCooldown: 0
   Grenade: {fileID: 6952339997246031459, guid: 2ea9757dee816c044b152f44b413cfb3, type: 3}
+  Bullet: {fileID: 0}
   shoot: 98
+  drop: 0
 --- !u!1 &4525105698276421169
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,7 +212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4525105698276421166}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: '''hand'''
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4525105698409148467}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +274,7 @@ GameObject:
   - component: {fileID: 4525105698848508334}
   - component: {fileID: 4525105698848508337}
   - component: {fileID: 4525105698848508335}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shrinky Jr. Mc O'neil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
