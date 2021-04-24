@@ -31,7 +31,7 @@ public class ItemLaunchHandler : MonoBehaviour
     }
     void LaunchGrenade()
     {
-        var launchedGrenade = Instantiate(Grenade, transform.position, Quaternion.identity);
+        var launchedGrenade = Instantiate(Grenade, transform.parent.GetChild(0).position, Quaternion.identity);
         launchedGrenade.GetComponent<Rigidbody>().AddForce(transform.forward*itemLaunchVelocity) ;
         launchedGrenade.GetComponent<Explode>().StartTimer(grenadeCooldown);
 
