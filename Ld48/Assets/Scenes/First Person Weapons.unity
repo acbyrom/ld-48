@@ -731,6 +731,10 @@ PrefabInstance:
       propertyPath: goal
       value: 
       objectReference: {fileID: 1104877182}
+    - target: {fileID: 1541335920083927828, guid: 1ab244aa159e84149bceac5fb4d1d7ff, type: 3}
+      propertyPath: health
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 2156311849424412201, guid: 1ab244aa159e84149bceac5fb4d1d7ff, type: 3}
       propertyPath: m_Name
       value: Demon

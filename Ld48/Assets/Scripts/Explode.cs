@@ -22,6 +22,6 @@ public class Explode : MonoBehaviour
         gameObject.GetComponent<SphereCollider>().enabled = true;
         //particle effects
         //deparent and destroy ^
-        Destroy(gameObject);
+        Destroy(gameObject,0.1f);
     }
 }
