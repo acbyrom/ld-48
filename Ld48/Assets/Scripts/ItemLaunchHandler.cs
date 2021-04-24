@@ -10,6 +10,8 @@ public class ItemLaunchHandler : MonoBehaviour
     public float grenadeCooldown;
     public GameObject Grenade;
 
+    public KeyCode shoot;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,7 @@ public class ItemLaunchHandler : MonoBehaviour
     {
         if (!recentlyLaunchedItem)
         {
-            if (Input.GetKeyDown(KeyCode.B))
+            if (Input.GetKeyDown(shoot))
             {
                 LaunchGrenade();
                 recentlyLaunchedItem = true;
