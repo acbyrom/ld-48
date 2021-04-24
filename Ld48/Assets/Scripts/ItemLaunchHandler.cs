@@ -49,7 +49,7 @@ public class ItemLaunchHandler : MonoBehaviour
     {
         var shotBullet = Instantiate(Bullet, transform.parent.GetChild(0).position, Quaternion.identity);
         shotBullet.GetComponent<Rigidbody>().AddForce(transform.forward * itemLaunchVelocity);
-
+        Destroy(shotBullet, 5f);
     }
     IEnumerator GunCountdown()
     {

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.48319817, g: 0.52563226, b: 0.5460423, a: 1}
+  m_IndirectSpecularColor: {r: 0.4831969, g: 0.5256323, b: 0.54604167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -550,6 +550,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4525105697722998184, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: drop
+      value: 113
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105697722998184, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: shoot
+      value: 323
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105697722998184, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: Bullet
+      value: 
+      objectReference: {fileID: 3349841545740484186, guid: 91c324511b74b52409c8d4dbbb121c7e, type: 3}
+    - target: {fileID: 4525105698276421166, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.662
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105698276421166, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.705
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105698276421166, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.248
+      objectReference: {fileID: 0}
     - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -600,29 +624,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2784f49916f182f428e973118a71d98b, type: 3}
---- !u!1 &1652771684 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4525105697722998191, guid: 2784f49916f182f428e973118a71d98b, type: 3}
-  m_PrefabInstance: {fileID: 1652771683}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1652771685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652771684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f05f0d926d1d1a459d690f2911121ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  recentlyLaunchedItem: 0
-  itemLaunchCooldown: 1
-  itemLaunchVelocity: 20
-  grenadeCooldown: 2
-  Grenade: {fileID: 3349841545740484186, guid: 91c324511b74b52409c8d4dbbb121c7e, type: 3}
-  shoot: 113
 --- !u!1 &1789760073
 GameObject:
   m_ObjectHideFlags: 0
