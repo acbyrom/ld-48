@@ -215,7 +215,9 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -4.31, z: 0.19999999}
   m_LocalScale: {x: 0.19999999, y: 10, z: 0.19999999}
-  m_Children: []
+  m_Children:
+  - {fileID: 527418194}
+  - {fileID: 1789760077}
   m_Father: {fileID: 1066351709}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -313,7 +315,7 @@ GameObject:
   - component: {fileID: 527418193}
   - component: {fileID: 527418192}
   - component: {fileID: 527418191}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -390,12 +392,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527418190}
-  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -19.81, y: -0.31, z: 15.46}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalRotation: {x: 0.38268343, y: -0, z: -0, w: 0.92387956}
+  m_LocalPosition: {x: -1.9810001, y: 0.4, z: 0.54600006}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 51599601}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -728,7 +730,7 @@ GameObject:
   - component: {fileID: 1789760076}
   - component: {fileID: 1789760075}
   - component: {fileID: 1789760074}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -805,12 +807,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789760073}
-  m_LocalRotation: {x: 0.5, y: 0, z: 0, w: 0.8660254}
-  m_LocalPosition: {x: 16, y: -1.67, z: 15.46}
-  m_LocalScale: {x: 8, y: 8, z: 8}
+  m_LocalRotation: {x: 0.5, y: -0, z: -0, w: 0.8660254}
+  m_LocalPosition: {x: 1.6000001, y: 0.264, z: 0.54600006}
+  m_LocalScale: {x: 0.8000001, y: 0.8, z: 0.8000001}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 51599601}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
 --- !u!1 &2088712558
 GameObject:
@@ -880,6 +882,7 @@ MonoBehaviour:
   controller: {fileID: 2088712559}
   speed: 12
   gravity: -14.715
+  jumpHeight: 3
   groundCheck: {fileID: 1447870701}
   groundDistance: 0.4
   groundMask:
