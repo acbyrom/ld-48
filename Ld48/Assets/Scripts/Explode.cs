@@ -18,7 +18,7 @@ public class Explode : MonoBehaviour
         gameObject.tag = "Explosion";
         gameObject.GetComponent<SphereCollider>().enabled = true;
         var particles = Instantiate(particleObject, transform.position, Quaternion.identity);
-        Destroy(particles, 10);
+        Destroy(particles, 10f);
         Destroy(gameObject,0.1f);
     }
 }
