@@ -414,6 +414,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4525105697722998184, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: shoot
+      value: 113
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105697722998187, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: mouseSensitivity
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
       propertyPath: m_RootOrder
       value: 0
