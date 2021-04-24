@@ -6,6 +6,7 @@ public class HostileCreatureMove : MonoBehaviour
 {
     public Transform goal;
     public float health;
+    public GameObject particles;
     // Start is called before the first frame update
     void Update()
     {
@@ -18,7 +19,16 @@ public class HostileCreatureMove : MonoBehaviour
         {
             health -= 100;
         }
-        if (other.CompareTag("Bullet"))
+        if (health <= 0)
+        {
+            var ptcs = Instantiate(particles, transform.position, Quaternion.identity);
+            Destroy(ptcs, 6f);
+            Destroy(gameObject);
+        }
+    }
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.transform.CompareTag("Bullet"))
         {
             health -= 1;
         }

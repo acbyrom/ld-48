@@ -6,7 +6,7 @@ public class MouseCamLook : MonoBehaviour
 {
     public float mouseSensitivity = 100f;
     public Transform playerBody;
-
+    float mouseY = 0f;
     float xRotation = 0f;
 
     void Start()
@@ -14,11 +14,11 @@ public class MouseCamLook : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    void LateUpdate()
+    void Update()
     {
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
-
+        mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
