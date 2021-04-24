@@ -8,6 +8,7 @@ public class PauseScript : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
+    public GameObject options;
 
     void Update()
     {
@@ -21,11 +22,16 @@ public class PauseScript : MonoBehaviour
             {
                 Pause();
             }
+            if (options.activeInHierarchy == true)
+            {
+                options.SetActive(false);
+            }
         }
     }
 
     public void Resume ()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -33,6 +39,7 @@ public class PauseScript : MonoBehaviour
 
     void Pause()
     {
+        Cursor.lockState = CursorLockMode.None;
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
