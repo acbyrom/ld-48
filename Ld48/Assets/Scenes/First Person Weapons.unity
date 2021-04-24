@@ -536,8 +536,94 @@ Transform:
   m_Children:
   - {fileID: 51599601}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1104877182 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+  m_PrefabInstance: {fileID: 1652771683}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1652771683
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4525105697722998184, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: drop
+      value: 113
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105697722998184, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: shoot
+      value: 323
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105697722998184, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: Bullet
+      value: 
+      objectReference: {fileID: 3349841545740484186, guid: 91c324511b74b52409c8d4dbbb121c7e, type: 3}
+    - target: {fileID: 4525105698276421166, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.662
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105698276421166, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.705
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105698276421166, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525105698848508336, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_Name
+      value: Shrinky Jr. Mc O'neil
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2784f49916f182f428e973118a71d98b, type: 3}
 --- !u!1 &1789760073
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,11 +720,6 @@ Transform:
   m_Father: {fileID: 51599601}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
---- !u!4 &2088712560 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
-  m_PrefabInstance: {fileID: 4525105697029435614}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3176622570513143972
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -649,7 +730,7 @@ PrefabInstance:
     - target: {fileID: 1541335920083927828, guid: 1ab244aa159e84149bceac5fb4d1d7ff, type: 3}
       propertyPath: goal
       value: 
-      objectReference: {fileID: 2088712560}
+      objectReference: {fileID: 1104877182}
     - target: {fileID: 2156311849424412201, guid: 1ab244aa159e84149bceac5fb4d1d7ff, type: 3}
       propertyPath: m_Name
       value: Demon
@@ -700,60 +781,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ab244aa159e84149bceac5fb4d1d7ff, type: 3}
---- !u!1001 &4525105697029435614
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4525105698848508336, guid: 2784f49916f182f428e973118a71d98b, type: 3}
-      propertyPath: m_Name
-      value: Shrinky Jr. Mc O'neil
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2784f49916f182f428e973118a71d98b, type: 3}
