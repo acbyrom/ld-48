@@ -198,6 +198,7 @@ MonoBehaviour:
   itemLaunchVelocity: 20
   grenadeCooldown: 2
   Grenade: {fileID: 6952339997246031459, guid: 2ea9757dee816c044b152f44b413cfb3, type: 3}
+  shoot: 98
 --- !u!1 &4525105698276421169
 GameObject:
   m_ObjectHideFlags: 0
