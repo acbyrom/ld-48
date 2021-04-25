@@ -12,18 +12,39 @@ EditorBuildSettings:
     path: Assets/Scenes/Floor1/First Test Level.unity
     guid: a0b9d575f697ff04f9ec08e1a161e971
   - enabled: 1
-    path: Assets/Scenes/Floor1/room 5/Room5.unity
-    guid: e3783bf8d6293354b9e171726725d139
+    path: Assets/Scenes/Floor1/room 1/Room1.unity
+    guid: 78ffede2781e47b469bad883bbc8e259
   - enabled: 1
     path: Assets/Scenes/Floor1/room 2/Room2.unity
     guid: e2047d1e2bdee0b4394892a67e759579
   - enabled: 1
-    path: Assets/Scenes/Floor1/room 1/Floor1Room1 1.unity
-    guid: 78ffede2781e47b469bad883bbc8e259
+    path: Assets/Scenes/Floor1/room 4/Room4.unity
+    guid: 11e387c99c2a6744398cdd01236f7355
+  - enabled: 1
+    path: Assets/Scenes/Floor1/room 5/Room5.unity
+    guid: e3783bf8d6293354b9e171726725d139
+  - enabled: 1
+    path: Assets/Scenes/Floor1/room 7/Room7.unity
+    guid: ff231e7677b582441978c19dfffcd040
+  - enabled: 1
+    path: Assets/Scenes/Floor1/room 8/Room8.unity
+    guid: cdd633cfdd7ef8146b5a4c0a03f46e96
   - enabled: 1
     path: Assets/Scenes/Floor1/room 9/Room9.unity
     guid: 3134c62c731ffac408f0ae6e2ffd0c56
   - enabled: 1
-    path: Assets/Scenes/Floor1/room 4/Room4.unity
-    guid: 11e387c99c2a6744398cdd01236f7355
+    path: Assets/Scenes/Floor1/room 10/room10.unity
+    guid: b59c1719238b9fa419512ed4e5ac37ce
+  - enabled: 1
+    path: Assets/Scenes/Floor1/room 11/room11.unity
+    guid: 18f8d3b99e13b4142a7aea0f154b4d5e
+  - enabled: 1
+    path: Assets/Scenes/Floor1/room 12/room12.unity
+    guid: addc45da79547b34e8f602d6a82fde31
+  - enabled: 1
+    path: Assets/Scenes/Floor1/room 13/room13.unity
+    guid: 97dac59ce079b104cbadd394f5a0b650
+  - enabled: 1
+    path: Assets/Scenes/Floor1/room 14/room14.unity
+    guid: 04235bb3851efdc4b955583c20787de5
   m_configObjects: {}
