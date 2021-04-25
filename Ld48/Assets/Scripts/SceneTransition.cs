@@ -5,14 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransition : MonoBehaviour
 {
-    string[,] scenes = {{"",""},{"",""}};
+    string[,] scenes = {{"Floor1Room1","Room2"},{"",""}};
     public void Die(){
         StartCoroutine(ReloadLevel());
     }
     public void Win()
     {
-        string nextRoom = scenes[PersistentData.floorNo,Random.Range(0,scenes.Length)];
+        string nextRoom = scenes[PersistentData.floorNo,Random.Range(0,scenes.Length-1)];
         StartCoroutine(LoadLevel(nextRoom));
+        PersistentData.roomNo += 1;
     }
     public Animator transition;
     IEnumerator LoadLevel(string newLevel)
