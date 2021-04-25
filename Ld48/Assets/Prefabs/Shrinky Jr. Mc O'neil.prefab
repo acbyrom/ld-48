@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 4525105698848508334}
   - component: {fileID: 4525105698848508337}
   - component: {fileID: 4525105698848508335}
+  - component: {fileID: 1898394423370658518}
   m_Layer: 6
   m_Name: Shrinky Jr. Mc O'neil
   m_TagString: Untagged
@@ -341,6 +342,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   sceneTransition: {fileID: 0}
+--- !u!114 &1898394423370658518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4525105698848508336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70574f6314febc145b60bcb8ad7023b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1158287298
 PrefabInstance:
   m_ObjectHideFlags: 0
