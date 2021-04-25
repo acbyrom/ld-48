@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 63d28c87a4dacd24399949d7ab20b1a7, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -183,7 +183,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sensitivity: 100
   playerBody: {fileID: 4525105698848508334}
-  dataHolder: {fileID: 4349496342967561250}
 --- !u!114 &4525105697722998184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,7 +230,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4525105698276421169}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.671, y: -0.23500013, z: 0.205}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0.205}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4525105697722998186}
@@ -341,6 +340,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 128
+  sceneTransition: {fileID: 0}
 --- !u!1001 &1158287298
 PrefabInstance:
   m_ObjectHideFlags: 0
