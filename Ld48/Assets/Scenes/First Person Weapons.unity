@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.48319817, g: 0.52563226, b: 0.5460423, a: 1}
+  m_IndirectSpecularColor: {r: 0.4831969, g: 0.5256323, b: 0.54604167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1189,10 +1189,6 @@ PrefabInstance:
       propertyPath: goal
       value: 
       objectReference: {fileID: 1104877182}
-    - target: {fileID: 1541335920083927828, guid: 1ab244aa159e84149bceac5fb4d1d7ff, type: 3}
-      propertyPath: health
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 2156311849424412201, guid: 1ab244aa159e84149bceac5fb4d1d7ff, type: 3}
       propertyPath: m_Name
       value: Demon (8)

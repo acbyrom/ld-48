@@ -32,13 +32,7 @@ public class HostileCreatureMove : MonoBehaviour
         {
             var ptcs = Instantiate(particles, transform.position, Quaternion.identity);
             Destroy(ptcs, 6f);
-            gameObject.GetComponent<AudioSource>().enabled = true;
-            gameObject.GetComponent<AudioSource>().pitch = Random.value;
-            gameObject.GetComponent<AudioSource>().Play();
-            if (!gameObject.GetComponent<AudioSource>().isPlaying)
-            {
-                Destroy(gameObject);
-            }
+            Destroy(gameObject);
         }
     }
 }
