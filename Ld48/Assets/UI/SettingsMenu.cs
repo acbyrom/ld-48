@@ -6,7 +6,6 @@ using UnityEngine.Audio;
 public class SettingsMenu : MonoBehaviour
 {
     public AudioMixer audioMixer;
-    public GameObject dataHolder;
 
     public void SetVolume (float volume)
     {
@@ -15,6 +14,6 @@ public class SettingsMenu : MonoBehaviour
 
     public void SetSensitivity(float sensitivity)
     {
-        dataHolder.GetComponent<PersistentData>().sensitivityMultiplier = sensitivity;
+        PersistentData.sensitivityMultiplier = sensitivity;
     }
 }

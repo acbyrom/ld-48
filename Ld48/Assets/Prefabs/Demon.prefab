@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1031443596175386655}
   m_Layer: 0
   m_Name: Demon
-  m_TagString: Untagged
+  m_TagString: HurtsPlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goal: {fileID: 0}
-  health: 0
+  health: 150
   particles: {fileID: 3363354781499731086, guid: 5aba45a2f4705f849998a61353d29670, type: 3}
 --- !u!195 &2158574373427594100
 NavMeshAgent:

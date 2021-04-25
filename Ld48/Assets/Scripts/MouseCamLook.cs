@@ -10,14 +10,14 @@ public class MouseCamLook : MonoBehaviour
     float xRotation = 0f;
     public GameObject dataHolder;
 
-    void Start()
+    void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
     {
-        sensitivity = 100 * dataHolder.GetComponent<PersistentData>().sensitivityMultiplier;
+        sensitivity = 100 * PersistentData.sensitivityMultiplier;
 
         float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
         mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime;

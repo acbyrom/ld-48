@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
+    public GameObject sceneTransition;
     Vector3 velocity;
     bool isGrounded;
 
@@ -41,5 +42,16 @@ public class PlayerMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("HurtsPlayer"))
+        {
+            sceneTransition.GetComponent<SceneTransition>().Die();
+        }
+        if (other.CompareTag("Goal"))
+        {
+            sceneTransition.GetComponent<SceneTransition>().Win();
+        }
     }
 }
