@@ -4,21 +4,23 @@ using UnityEngine;
 
 public class MouseCamLook : MonoBehaviour
 {
-    public float mouseSensitivity = 100f;
+    public float sensitivity = 100f;
     public Transform playerBody;
-
+    float mouseY = 0f;
     float xRotation = 0f;
 
-    void Start()
+    void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
     {
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        sensitivity = 100 * PersistentData.sensitivityMultiplier;
 
+        float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
+        mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime;
+        
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
