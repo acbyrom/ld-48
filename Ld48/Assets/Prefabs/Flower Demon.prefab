@@ -9781,7 +9781,7 @@ MonoBehaviour:
   goal: {fileID: 0}
   health: 300
   particles: {fileID: 3363354781499731086, guid: 5aba45a2f4705f849998a61353d29670, type: 3}
-  staticRange: 15
+  staticRange: 10
   staticAttackSphere: {fileID: 4501967163687729318}
 --- !u!195 &3822704000932774791
 NavMeshAgent:
