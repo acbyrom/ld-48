@@ -49,7 +49,7 @@ public class ItemLaunchHandler : MonoBehaviour
     void ShootBullet()
     {
         var shotBullet = Instantiate(Bullet, hand.position, Quaternion.identity);
-        shotBullet.GetComponent<Rigidbody>().AddForce(transform.forward * itemLaunchVelocity);
+        shotBullet.GetComponent<Rigidbody>().AddForce(hand.forward * itemLaunchVelocity);
         Destroy(shotBullet, 5f);
     }
     IEnumerator GunCountdown()
@@ -60,7 +60,7 @@ public class ItemLaunchHandler : MonoBehaviour
     void LaunchGrenade()
     {
         var launchedGrenade = Instantiate(Grenade, hand.position, Quaternion.identity);
-        launchedGrenade.GetComponent<Rigidbody>().AddForce(transform.forward * itemLaunchVelocity) ;
+        launchedGrenade.GetComponent<Rigidbody>().AddForce(hand.forward * itemLaunchVelocity) ;
         launchedGrenade.GetComponent<Explode>().StartTimer(grenadeCooldown);
 
     }
