@@ -4,14 +4,18 @@ using UnityEngine;
 using UnityEngine.AI;
 public class HostileCreatureMove : MonoBehaviour
 {
+    public bool isMobile = true;
     public Transform goal;
     public float health;
     public GameObject particles;
     // Start is called before the first frame update
     void Update()
     {
-        NavMeshAgent agent = GetComponent<NavMeshAgent>();
-        agent.destination = goal.position;
+        if (isMobile)
+        {
+            NavMeshAgent agent = GetComponent<NavMeshAgent>();
+            agent.destination = goal.position;
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
