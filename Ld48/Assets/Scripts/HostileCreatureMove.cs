@@ -19,15 +19,6 @@ public class HostileCreatureMove : MonoBehaviour
         {
             health -= 100;
         }
-        if (health <= 0)
-        {
-            var ptcs = Instantiate(particles, transform.position, Quaternion.identity);
-            Destroy(ptcs, 6f);
-            Destroy(gameObject);
-        }
-    }
-    private void OnCollisionEnter(Collision other)
-    {
         if (other.transform.CompareTag("Bullet"))
         {
             health -= 1;
@@ -36,6 +27,18 @@ public class HostileCreatureMove : MonoBehaviour
         {
             //graphics
             Destroy(gameObject);
+        }
+        if (health <= 0)
+        {
+            var ptcs = Instantiate(particles, transform.position, Quaternion.identity);
+            Destroy(ptcs, 6f);
+            gameObject.GetComponent<AudioSource>().enabled = true;
+            gameObject.GetComponent<AudioSource>().pitch = Random.value;
+            gameObject.GetComponent<AudioSource>().Play();
+            if (!gameObject.GetComponent<AudioSource>().isPlaying)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
