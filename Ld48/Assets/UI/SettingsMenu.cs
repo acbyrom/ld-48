@@ -11,4 +11,9 @@ public class SettingsMenu : MonoBehaviour
     {
         audioMixer.SetFloat("volume", volume);
     }
+
+    public void SetSensitivity(float sensitivity)
+    {
+        PersistentData.sensitivity = sensitivity;
+    }
 }
