@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class Explode : MonoBehaviour
 {
-    // Start is called before the first frame update
-    private void Start()
-    {
-        
-    }
+    public GameObject particleObject;
 
     public void StartTimer(float boomTimer)
     {
@@ -19,9 +15,10 @@ public class Explode : MonoBehaviour
     private IEnumerator Explosion(float boomTimer)
     {
         yield return new WaitForSeconds(boomTimer);
+        gameObject.tag = "Explosion";
         gameObject.GetComponent<SphereCollider>().enabled = true;
-        //particle effects
-        //deparent and destroy ^
-        Destroy(gameObject);
+        var particles = Instantiate(particleObject, transform.position, Quaternion.identity);
+        Destroy(particles, 10f);
+        Destroy(gameObject,0.1f);
     }
 }
