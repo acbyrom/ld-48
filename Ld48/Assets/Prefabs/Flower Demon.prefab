@@ -4907,7 +4907,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2.63
+  m_Radius: 4
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5434052229187947878
 GameObject:
@@ -9781,7 +9781,7 @@ MonoBehaviour:
   goal: {fileID: 0}
   health: 300
   particles: {fileID: 3363354781499731086, guid: 5aba45a2f4705f849998a61353d29670, type: 3}
-  staticRange: 10
+  staticRange: 15
   staticAttackSphere: {fileID: 4501967163687729318}
 --- !u!195 &3822704000932774791
 NavMeshAgent:
