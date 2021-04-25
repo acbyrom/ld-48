@@ -8,13 +8,27 @@ public class HostileCreatureMove : MonoBehaviour
     public Transform goal;
     public float health;
     public GameObject particles;
-    // Start is called before the first frame update
+
+    public float staticRange = 3f;
+    public GameObject staticAttackSphere;
+
     void Update()
     {
         if (isMobile)
         {
             NavMeshAgent agent = GetComponent<NavMeshAgent>();
             agent.destination = goal.position;
+        }
+        else
+        {
+            float distance = Vector3.Distance(goal.transform.position, this.transform.position);
+            if (distance <= staticRange)
+            {
+                staticAttackSphere.SetActive(true);
+            } else
+            {
+                staticAttackSphere.SetActive(false);
+            }
         }
     }
     private void OnTriggerEnter(Collider other)
