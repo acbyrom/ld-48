@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransition : MonoBehaviour
 {
-    string[] scenes = {"Floor1Room1","Room2"};
+    string[] scenes = {"Floor1Room1 1","Room2", "Room4", "Room5", "Room6", "Room7", "Room8", "Room9", "Room10", "Room11", "Room12"};
     public void Die(){
         StartCoroutine(ReloadLevel());
     }
