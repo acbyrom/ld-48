@@ -406,6 +406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneLoader
       objectReference: {fileID: 0}
+    - target: {fileID: 1947856558122884543, guid: 250822164c40ea64f90b53caa71c73f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 250822164c40ea64f90b53caa71c73f1, type: 3}
 --- !u!1001 &399413473
@@ -726,6 +730,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &638792750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5434052230266863537, guid: 7f25caace5f20014ba725054bb006bad, type: 3}
+  m_PrefabInstance: {fileID: 5434052228947980408}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &638792751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638792750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfdc51ab4d4cfa943895d21e5ac7c9a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goal: {fileID: 0}
+  health: 0
+  particles: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1603,6 +1627,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3255649132685553979, guid: 7f25caace5f20014ba725054bb006bad, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7beec9d73a15dbd49ad91205463e44b8, type: 2}
+    - target: {fileID: 3853511055367934998, guid: 7f25caace5f20014ba725054bb006bad, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853511055367934998, guid: 7f25caace5f20014ba725054bb006bad, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853511055367934998, guid: 7f25caace5f20014ba725054bb006bad, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5434052230266863537, guid: 7f25caace5f20014ba725054bb006bad, type: 3}
       propertyPath: m_Name
       value: Flower Demon
