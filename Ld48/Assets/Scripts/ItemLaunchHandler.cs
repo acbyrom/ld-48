@@ -15,6 +15,7 @@ public class ItemLaunchHandler : MonoBehaviour
 
     public GameObject Grenade;
     public GameObject Bullet;
+    public Transform hand;
     public KeyCode shoot;
     public KeyCode drop;
     // Start is called before the first frame update
@@ -47,7 +48,7 @@ public class ItemLaunchHandler : MonoBehaviour
     }
     void ShootBullet()
     {
-        var shotBullet = Instantiate(Bullet, transform.parent.GetChild(0).position, Quaternion.identity);
+        var shotBullet = Instantiate(Bullet, hand.position, Quaternion.identity);
         shotBullet.GetComponent<Rigidbody>().AddForce(transform.forward * itemLaunchVelocity);
         Destroy(shotBullet, 5f);
     }
@@ -58,7 +59,7 @@ public class ItemLaunchHandler : MonoBehaviour
     }
     void LaunchGrenade()
     {
-        var launchedGrenade = Instantiate(Grenade, transform.parent.GetChild(0).position, Quaternion.identity);
+        var launchedGrenade = Instantiate(Grenade, hand.position, Quaternion.identity);
         launchedGrenade.GetComponent<Rigidbody>().AddForce(transform.forward * itemLaunchVelocity) ;
         launchedGrenade.GetComponent<Explode>().StartTimer(grenadeCooldown);
 
