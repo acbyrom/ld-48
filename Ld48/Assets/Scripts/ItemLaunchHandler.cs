@@ -48,7 +48,7 @@ public class ItemLaunchHandler : MonoBehaviour
     }
     void ShootBullet()
     {
-        var shotBullet = Instantiate(Bullet, hand.position, Quaternion.identity);
+        var shotBullet = Instantiate(Bullet, hand.position, transform.rotation);
         shotBullet.GetComponent<Rigidbody>().AddForce(hand.forward * itemLaunchVelocity);
         Destroy(shotBullet, 5f);
     }

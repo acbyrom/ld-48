@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4831969, g: 0.5256323, b: 0.54604167, a: 1}
+  m_IndirectSpecularColor: {r: 0.48319817, g: 0.52563226, b: 0.5460423, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -351,6 +351,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ab244aa159e84149bceac5fb4d1d7ff, type: 3}
+--- !u!1001 &318433474
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1947856558122884542, guid: 250822164c40ea64f90b53caa71c73f1, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947856558122884542, guid: 250822164c40ea64f90b53caa71c73f1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947856558122884542, guid: 250822164c40ea64f90b53caa71c73f1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947856558122884542, guid: 250822164c40ea64f90b53caa71c73f1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -62
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947856558122884542, guid: 250822164c40ea64f90b53caa71c73f1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947856558122884542, guid: 250822164c40ea64f90b53caa71c73f1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947856558122884542, guid: 250822164c40ea64f90b53caa71c73f1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947856558122884542, guid: 250822164c40ea64f90b53caa71c73f1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947856558122884542, guid: 250822164c40ea64f90b53caa71c73f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947856558122884542, guid: 250822164c40ea64f90b53caa71c73f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947856558122884542, guid: 250822164c40ea64f90b53caa71c73f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947856558122884543, guid: 250822164c40ea64f90b53caa71c73f1, type: 3}
+      propertyPath: m_Name
+      value: SceneLoader
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 250822164c40ea64f90b53caa71c73f1, type: 3}
 --- !u!1001 &399413473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -473,6 +530,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0f9c73bfe4e1644caecb18e7f66c751, type: 3}
+--- !u!1 &424941505 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1947856558122884543, guid: 250822164c40ea64f90b53caa71c73f1, type: 3}
+  m_PrefabInstance: {fileID: 318433474}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &428607098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1172,6 +1234,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4525105698848508335, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: sceneTransition
+      value: 
+      objectReference: {fileID: 424941505}
     - target: {fileID: 4525105698848508336, guid: 2784f49916f182f428e973118a71d98b, type: 3}
       propertyPath: m_Name
       value: Shrinky Jr. Mc O'neil
