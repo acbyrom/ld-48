@@ -49,7 +49,11 @@ public class PlayerMovement : MonoBehaviour
         {
             sceneTransition.GetComponent<SceneTransition>().Die();
         }
-        if (other.CompareTag("Goal"))
+        else if (other.CompareTag("Explosion"))
+        {
+            sceneTransition.GetComponent<SceneTransition>().Die();
+        }
+        else if (other.CompareTag("Goal"))
         {
             sceneTransition.GetComponent<SceneTransition>().Win();
         }

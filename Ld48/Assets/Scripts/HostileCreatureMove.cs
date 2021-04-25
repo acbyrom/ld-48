@@ -37,14 +37,9 @@ public class HostileCreatureMove : MonoBehaviour
         {
             health -= 100;
         }
-        if (other.transform.CompareTag("Bullet"))
+        else if (other.transform.CompareTag("Bullet"))
         {
             health -= 1;
-        }
-        if (health <= 0)
-        {
-            //graphics
-            Destroy(gameObject);
         }
         if (health <= 0)
         {
