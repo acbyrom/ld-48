@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class MouseCamLook : MonoBehaviour
 {
-    float sensitivity;
+    public float sensitivity = 100f;
     public Transform playerBody;
     float mouseY = 0f;
     float xRotation = 0f;
+    public GameObject dataHolder;
 
     void Start()
     {
@@ -16,7 +17,7 @@ public class MouseCamLook : MonoBehaviour
 
     void Update()
     {
-        sensitivity = PersistentData.sensitivity;
+        sensitivity = 100 * dataHolder.GetComponent<PersistentData>().sensitivityMultiplier;
 
         float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
         mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime;
