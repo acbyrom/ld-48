@@ -47,14 +47,17 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("HurtsPlayer"))
         {
+            PersistentData.totalDeaths += 1;
             sceneTransition.GetComponent<SceneTransition>().Die();
         }
         else if (other.CompareTag("Explosion"))
         {
+            PersistentData.totalDeaths += 1;
             sceneTransition.GetComponent<SceneTransition>().Die();
         }
         else if (other.CompareTag("Goal"))
         {
+            PersistentData.totalDeaths += 1;
             sceneTransition.GetComponent<SceneTransition>().Win();
         }
     }

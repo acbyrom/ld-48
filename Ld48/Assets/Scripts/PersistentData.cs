@@ -7,6 +7,6 @@ public class PersistentData : MonoBehaviour
     //static float volumeMultiplier = 100f; AUDIO IS ALREADY PERSISTENT
     public static float sensitivityMultiplier = 2f;
     public static int roomNo=0;
-    public static float time = 0;
+    public static float totalTime = 0;
     public static float totalDeaths = 0;
 }
