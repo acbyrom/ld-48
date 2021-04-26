@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.117064886, g: 0.05011449, b: 0.066837914, a: 1}
+  m_IndirectSpecularColor: {r: 0.11706468, g: 0.050114572, b: 0.06683793, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -388,7 +388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
       propertyPath: m_LocalRotation.x
@@ -396,7 +396,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
       propertyPath: m_LocalRotation.z
@@ -408,7 +408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4525105698848508334, guid: 2784f49916f182f428e973118a71d98b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -453,7 +453,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9882353, g: 0.8039216, b: 0.5058824, a: 1}
-  m_Intensity: 1
+  m_Intensity: 3.67
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -546,7 +546,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9882353, g: 0.8039216, b: 0.5058824, a: 1}
-  m_Intensity: 1
+  m_Intensity: 2.23
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1093,7 +1093,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9882353, g: 0.8039216, b: 0.5058824, a: 1}
-  m_Intensity: 1
+  m_Intensity: 5.25
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1486,7 +1486,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.7176471, g: 0.93333334, b: 0.9098039, a: 1}
-  m_Intensity: 1
+  m_Intensity: 2.24
   m_Range: 3.93
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1717,7 +1717,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9882353, g: 0.8039216, b: 0.5058824, a: 1}
-  m_Intensity: 1
+  m_Intensity: 2.67
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2163,7 +2163,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.7176471, g: 0.93333334, b: 0.9098039, a: 1}
-  m_Intensity: 1
+  m_Intensity: 3.15
   m_Range: 3.93
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2382,7 +2382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1947856558122884543, guid: 250822164c40ea64f90b53caa71c73f1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 250822164c40ea64f90b53caa71c73f1, type: 3}

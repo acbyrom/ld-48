@@ -647,6 +647,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shrinky Jr. Mc O'neil
       objectReference: {fileID: 0}
+    - target: {fileID: 6239255480790691196, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_Range
+      value: 40.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239255480790691196, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9040744
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239255480790691196, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239255480790691196, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8726415
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239255480790691196, guid: 2784f49916f182f428e973118a71d98b, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2784f49916f182f428e973118a71d98b, type: 3}
 --- !u!1 &303431179 stripped
