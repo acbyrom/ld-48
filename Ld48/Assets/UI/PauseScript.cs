@@ -27,6 +27,11 @@ public class PauseScript : MonoBehaviour
                 options.SetActive(false);
             }
         }
+        if (!GameIsPaused)
+        {
+            PersistentData.totalTime += Time.deltaTime;
+        }
+
     }
 
     public void Resume ()
@@ -55,7 +60,7 @@ public class PauseScript : MonoBehaviour
         #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
         #else
-        Application.Quit();
+        SceneManager.LoadScene("Menu Scene");
         #endif
     }
 }

@@ -14,7 +14,10 @@ public class MenuScript : MonoBehaviour
     {
         Debug.Log("options");
     }
-
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("Menu Scene");
+    }
     public void QuitGame()
     {
         Application.Quit();
