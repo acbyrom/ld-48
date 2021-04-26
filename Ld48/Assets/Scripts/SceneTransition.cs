@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransition : MonoBehaviour
 {
-    List<string> scenes = new List<string> {"Room1","Room2", "Room4","Room5", "Room6", "Room7", "Room8", "Room9", "Room10", "Room11", "Room12", "Room13", "Room14", "Room15", "Room16", "Room17"};
-    static List<string> unusedScenes;
+    List<string> scenes = new List<string> { "Room1", "Room2", "Room4", "Room5", "Room6", "Room7", "Room8", "Room9", "Room10", "Room11", "Room12", "Room13", "Room14", "Room15", "Room16", "Room17" };
+    static List<string> unusedScenes = new List<string> {};
     private void Start()
     {
         if (unusedScenes.Count == 0)

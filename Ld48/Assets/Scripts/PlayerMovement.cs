@@ -57,8 +57,11 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (other.CompareTag("Goal"))
         {
-            PersistentData.totalDeaths += 1;
             sceneTransition.GetComponent<SceneTransition>().Win();
         }
+    }
+    public void Win()
+    {
+        sceneTransition.GetComponent<SceneTransition>().Win();
     }
 }
