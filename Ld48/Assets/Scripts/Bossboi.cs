@@ -36,6 +36,7 @@ public class Bossboi : MonoBehaviour
             var ptcs = Instantiate(particles, transform.position, Quaternion.identity);
             Destroy(ptcs, 6f);
             Destroy(transform.parent.parent.parent.parent.gameObject,2f);
+            Time.timeScale = 0;
             player.GetComponent<PlayerMovement>().Win();
         } else
         {

@@ -38,6 +38,10 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            PersistentData.roomNo += 1;
+        }
 
         velocity.y += gravity * Time.deltaTime;
 
