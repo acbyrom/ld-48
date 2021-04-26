@@ -57,6 +57,9 @@ public class PauseScript : MonoBehaviour
 
     public void QuitGame()
     {
+        PersistentData.roomNo = 0;
+        PersistentData.totalTime = 0;
+        PersistentData.totalDeaths = 0;
         #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
         #else

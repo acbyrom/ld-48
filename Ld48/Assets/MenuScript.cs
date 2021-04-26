@@ -17,6 +17,9 @@ public class MenuScript : MonoBehaviour
     public void BackToMenu()
     {
         SceneManager.LoadScene("Menu Scene");
+        PersistentData.roomNo = 0;
+        PersistentData.totalTime = 0;
+        PersistentData.totalDeaths = 0;
     }
     public void QuitGame()
     {
