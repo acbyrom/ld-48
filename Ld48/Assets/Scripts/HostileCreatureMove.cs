@@ -7,10 +7,10 @@ public class HostileCreatureMove : MonoBehaviour
     public Transform goal;
     public float health;
     public GameObject particles;
+    NavMeshAgent agent = GetComponent<NavMeshAgent>();
     // Start is called before the first frame update
     void Update()
     {
-        NavMeshAgent agent = GetComponent<NavMeshAgent>();
         agent.destination = goal.position;
     }
     private void OnTriggerEnter(Collider other)
