@@ -7,6 +7,7 @@ public class Bossboi : MonoBehaviour
     public float health;
     public GameObject[] minions;
     public Transform player;
+    public GameObject particles;
     float maxHealth;
     private void Start()
     {
@@ -24,7 +25,7 @@ public class Bossboi : MonoBehaviour
     {
         if (other.CompareTag("Explosion"))
         {
-            health -= 100;
+            health -= 10;
         }
         else if (other.transform.CompareTag("Bullet"))
         {
@@ -32,7 +33,10 @@ public class Bossboi : MonoBehaviour
         }
         if (health <= 0)
         {
-            Destroy(transform.parent.parent.parent.parent.gameObject);
+            var ptcs = Instantiate(particles, transform.position, Quaternion.identity);
+            Destroy(ptcs, 6f);
+            Destroy(transform.parent.parent.parent.parent.gameObject,2f);
+            player.GetComponent<PlayerMovement>().Win();
         } else
         {
             RenderSettings.ambientIntensity = (health / maxHealth);
