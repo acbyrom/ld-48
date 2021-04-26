@@ -150,7 +150,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Standalone: com.DefaultCompany.Ld48
+    Standalone: com.GreasyGamesft.Btdaya.Ld48
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -265,7 +265,7 @@ PlayerSettings:
   - m_BuildTarget: Standalone
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 1ad003d5faffb94418217bcebea5b5ed, type: 3}
+      m_Icon: {fileID: 2800000, guid: 20422c8c129b98d4ab832b3f0884b256, type: 3}
       m_Width: 1024
       m_Height: 1024
       m_Kind: 0
@@ -307,7 +307,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 1ad003d5faffb94418217bcebea5b5ed, type: 3}
+      m_Icon: {fileID: 2800000, guid: 20422c8c129b98d4ab832b3f0884b256, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
