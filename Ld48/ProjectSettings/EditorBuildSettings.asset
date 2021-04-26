@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Floor1/room 5/Room5.unity
     guid: e3783bf8d6293354b9e171726725d139
   - enabled: 1
+    path: Assets/Scenes/Floor1/room 6/Room6.unity
+    guid: c73d4e809f800db499eaed6d7d019022
+  - enabled: 1
     path: Assets/Scenes/Floor1/room 7/Room7.unity
     guid: ff231e7677b582441978c19dfffcd040
   - enabled: 1
