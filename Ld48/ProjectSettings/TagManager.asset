@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - HurtsPlayer
   - Goal
+  - Music
   layers:
   - Default
   - TransparentFX

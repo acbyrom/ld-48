@@ -8,7 +8,6 @@ public class MouseCamLook : MonoBehaviour
     public Transform playerBody;
     float mouseY = 0f;
     float xRotation = 0f;
-
     void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;

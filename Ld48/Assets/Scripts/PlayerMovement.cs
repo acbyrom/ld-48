@@ -6,6 +6,9 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
 
+    public AudioClip die;
+    public AudioClip door;
+
     public float speed = 6f;
     public float gravity = -15f;
     public float jumpHeight = 3f;
@@ -17,6 +20,11 @@ public class PlayerMovement : MonoBehaviour
     public GameObject sceneTransition;
     Vector3 velocity;
     bool isGrounded;
+    new AudioSource audio;
+    private void Start()
+    {
+        audio = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -38,10 +46,6 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            PersistentData.roomNo += 1;
-        }
 
         velocity.y += gravity * Time.deltaTime;
 
@@ -51,21 +55,29 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("HurtsPlayer"))
         {
+            audio.clip = die;
+            audio.Play();
             PersistentData.totalDeaths += 1;
             sceneTransition.GetComponent<SceneTransition>().Die();
         }
         else if (other.CompareTag("Explosion"))
         {
+            audio.clip = die;
+            audio.Play();
             PersistentData.totalDeaths += 1;
             sceneTransition.GetComponent<SceneTransition>().Die();
         }
         else if (other.CompareTag("Goal"))
         {
+            audio.clip = door;
+            audio.Play();
             sceneTransition.GetComponent<SceneTransition>().Win();
         }
     }
     public void Win()
     {
+        audio.clip = door;
+        audio.Play();
         sceneTransition.GetComponent<SceneTransition>().Win();
     }
 }

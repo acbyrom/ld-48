@@ -18,10 +18,11 @@ public class ItemLaunchHandler : MonoBehaviour
     public Transform hand;
     public KeyCode shoot;
     public KeyCode drop;
+    new AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -39,6 +40,8 @@ public class ItemLaunchHandler : MonoBehaviour
             {
                 if (Input.GetKeyDown(shoot))
                 {
+                    audio.pitch = Random.value;
+                    audio.Play();
                     ShootBullet();
                     recentlyShot = true;
                     StartCoroutine(GunCountdown());
