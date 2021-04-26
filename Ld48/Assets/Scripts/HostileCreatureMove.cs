@@ -8,20 +8,24 @@ public class HostileCreatureMove : MonoBehaviour
     public Transform goal;
     public float health;
     public GameObject particles;
-
+    public float agentSpeed;
     public float staticRange = 3f;
     public GameObject staticAttackSphere;
-
+    NavMeshAgent agent;
+    private void Start()
+    {
+        agent = GetComponent<NavMeshAgent>();
+        agent.speed = agentSpeed;
+    }
     void Update()
     {
         if (isMobile)
         {
-            NavMeshAgent agent = GetComponent<NavMeshAgent>();
             agent.destination = goal.position;
         }
         else
         {
-            float distance = Vector3.Distance(goal.transform.position, this.transform.position);
+            float distance = Vector3.Distance(goal.transform.position, transform.position);
             if (distance <= staticRange)
             {
                 staticAttackSphere.SetActive(true);
